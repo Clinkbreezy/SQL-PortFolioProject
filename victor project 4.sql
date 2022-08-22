@@ -1,7 +1,7 @@
 
 
 
----populating ownersplitaddress, ownersplitcity and ownersplitstate----
+				---populating ownersplitaddress, ownersplitcity and ownersplitstate----
 
 select propertysplitaddress, propertysplitcity, isnull(OwnerSplitAddress,propertysplitaddress),
 isnull(OwnerSplitCity, propertysplitcity), isnull(OwnerSplitState, 'TN')
